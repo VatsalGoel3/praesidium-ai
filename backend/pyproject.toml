@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "praesidium-backend"
+version = "0.1.0"
+description = "Backend for Praesidium AI - Cybersecurity Intelligence"
+authors = ["Vatsal Goel <vatsal.goel@utah.edu>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110"
+uvicorn = { extras = ["standard"], version = "^0.27" }
+pydantic = "^2.6"
+email-validator = "^2.1"
+sqlmodel = "^0.0.16"
+psycopg = { extras = ["binary"], version = "^3.1" }
+loguru = "^0.7"
+yara-python = "^4.3"
+torch = "^2.2"
+torchvision = "^0.17"
+scikit-learn = "^1.4"
+pillow = "^10.2"
+python-multipart = "^0.0.9"
+prometheus-client = "^0.20"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

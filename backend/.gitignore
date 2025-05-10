@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.venv/
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Bytecode, logs, and outputs
+*.log
+*.sqlite3
+*.db
+
+# Pytest
+.cache/
+.pytest_cache/
+coverage.xml
+htmlcov/
+
+# Poetry
+poetry.lock
+
+# Docker
+*.pid
